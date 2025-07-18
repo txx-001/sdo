@@ -213,7 +213,11 @@ function generate_summary_comparison(results_data, convergence_data, algorithm_n
         end
     end
     
-    sgtitle('Cross-Dimensional Convergence Comparison', 'FontSize', 14, 'FontWeight', 'bold');
+    % sgtitle('Cross-Dimensional Convergence Comparison', 'FontSize', 14, 'FontWeight', 'bold');
+    % Note: Using annotation instead of sgtitle for Octave compatibility
+    annotation('textbox', [0.35, 0.95, 0.3, 0.05], 'String', 'Cross-Dimensional Convergence Comparison', ...
+               'FontSize', 14, 'FontWeight', 'bold', 'HorizontalAlignment', 'center', ...
+               'EdgeColor', 'none');
     
     % Save summary plot
     results_dir = '/home/runner/work/sdo/sdo/experiments/results';

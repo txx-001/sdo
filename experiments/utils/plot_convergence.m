@@ -83,7 +83,11 @@ function plot_convergence(convergence_data, algorithm_names, function_numbers, s
     end
     
     % Overall title
-    sgtitle('Convergence Curves Comparison', 'FontSize', 16, 'FontWeight', 'bold');
+    % sgtitle('Convergence Curves Comparison', 'FontSize', 16, 'FontWeight', 'bold');
+    % Note: sgtitle not available in standard Octave, using text instead
+    annotation('textbox', [0.35, 0.95, 0.3, 0.05], 'String', 'Convergence Curves Comparison', ...
+               'FontSize', 16, 'FontWeight', 'bold', 'HorizontalAlignment', 'center', ...
+               'EdgeColor', 'none');
     
     % Save plot if requested
     if save_plots

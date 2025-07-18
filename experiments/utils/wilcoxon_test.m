@@ -43,7 +43,7 @@ function wilcoxon_results = wilcoxon_test(data, algorithm_names, reference_algor
             data_comp = data{alg}(:, func);
             
             % Perform Wilcoxon rank-sum test
-            [p, h] = ranksum(data_ref, data_comp, 'alpha', 0.05);
+            [p, h] = simple_ranksum(data_ref, data_comp, 0.05);
             
             p_values(alg, func) = p;
             h_values(alg, func) = h;
