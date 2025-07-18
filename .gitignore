@@ -1,0 +1,17 @@
+# MATLAB/Octave generated files
+*.asv
+*.m~
+octave-workspace
+
+# Test and temporary files
+test_*.m
+test_*.png
+qualitative_analysis_test.png
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*~
+*.bak
